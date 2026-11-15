@@ -2,19 +2,19 @@
 
 a personal portfolio and digital garden. 
 
-## About
+## about
 this site is a collection of my professional experience, projects, and personal interests. 
 
 it features an interactive travel map, a dynamic timeline, and a dark mode toggle.
 
-## Built With
+## built with
 * HTML5
-* CSS3 (Custom properties, Flexbox, CSS Grid)
-* Vanilla JavaScript
+* CSS3 (custom properties, Flexbox, CSS Grid)
+* vanilla JavaScript
 * [Leaflet.js](https://leafletjs.com/) for the interactive maps
 
-## Features
-* **Interactive Travel Map:** Highlights countries visited using GeoJSON data.
-* **Collapsible Timeline:** Displays professional and educational milestones.
-* **Responsive Design:** Optimized for mobile, tablet, and desktop.
-* **Dark Mode:** Custom CSS variables for seamless theme switching.
+## features
+* **interactive travel map:** highlights countries visited using GeoJSON data.
+* **collapsible timeline:** displays professional and educational milestones.
+* **responsive design:** optimized for mobile, tablet, and desktop.
+* **dark mode:** custom CSS variables for seamless theme switching.
