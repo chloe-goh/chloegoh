@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>experiences | little.hortus</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="logo">little.hortus ✳</a>
+
+    <div class="nav-links">
+        <a href="index.html">about</a>
+        <a href="experience.html" class="active-link">experience</a>
+        <a href="projects.html">projects</a>
+        <a href="interests.html">interests</a>
+    </div>
+
+    <button id="theme-toggle" aria-label="Toggle dark mode">☾</button>
+</nav>
+
+<main>
+
+    <section class="page-hero">
+
+        <p class="eyebrow">02 / MY PROFESSIONAL JOURNEY</p>
+
+        <h1>experience &amp;<br><em>growth.</em></h1>
+
+        <p>
+            a collection of experiences, milestones,
+            achievements and skills I've developed
+            along the way.
+        </p>
+
+    </section>
+
+
+    <!-- EXPERIENCE -->
+
+    <section class="section">
+
+        <div class="section-heading">
+            <span>01 / EXPERIENCE</span>
+            <h2>where I've been.</h2>
+            <p>click a company or school to see the highlights.</p>
+        </div>
+
+        <div class="tl-legend">
+            <span class="work"><i></i>work</span>
+            <span class="edu"><i></i>education</span>
+        </div>
+
+        <!-- TIMELINE TRACK -->
+        <div class="tl-track">
+
+            <button class="tl-node up edu" data-target="panel-ahs" aria-pressed="false">
+                <span class="tl-label"><span class="tl-card">
+                    <strong>Anglican High School</strong>
+                    <small>GCE O' Levels</small>
+                </span></span>
+                <span class="tl-stem"></span>
+                <span class="tl-dot"></span>
+                <span class="tl-year">2012</span>
+            </button>
+
+            <button class="tl-node down edu" data-target="panel-acjc" aria-pressed="false">
+                <span class="tl-label"><span class="tl-card">
+                    <strong>Anglo-Chinese Junior College</strong>
+                    <small>GCE A' Levels</small>
+                </span></span>
+                <span class="tl-stem"></span>
+                <span class="tl-dot"></span>
+                <span class="tl-year">2016</span>
+            </button>
+
+            <button class="tl-node up edu" data-target="panel-nus" aria-pressed="false">
+                <span class="tl-label"><span class="tl-card">
+                    <strong>National University of Singapore</strong>
+                    <small>BSocSci (Hons) Economics</small>
+                </span></span>
+                <span class="tl-stem"></span>
+                <span class="tl-dot"></span>
+                <span class="tl-year">2018</span>
+            </button>
+
+            <button class="tl-node down work" data-target="panel-zebra" aria-pressed="false">
+                <span class="tl-label"><span class="tl-card">
+                    <strong>Zebra Technologies</strong>
+                    <small>Trade Compliance Intern</small>
+                </span></span>
+                <span class="tl-stem"></span>
+                <span class="tl-dot"></span>
+                <span class="tl-year">2021</span>
+            </button>
+
+            <button class="tl-node up work" data-target="panel-bytedance" aria-pressed="false">
+                <span class="tl-label"><span class="tl-card">
+                    <strong>ByteDance · TikTok</strong>
+                    <small>Product &amp; Process Analyst Intern</small>
+                </span></span>
+                <span class="tl-stem"></span>
+                <span class="tl-dot"></span>
+                <span class="tl-year">2022</span>
+            </button>
+
+            <button class="tl-node down work" data-target="panel-eex" aria-pressed="false">
+                <span class="tl-label"><span class="tl-card">
+                    <strong>EEX Asia</strong>
+                    <small>Market Operations Analyst</small>
+                </span></span>
+                <span class="tl-stem"></span>
+                <span class="tl-dot"></span>
+                <span class="tl-year">2023</span>
+            </button>
+
+            <button class="tl-node up work" data-target="panel-boc" aria-pressed="false">
+               
+                <span class="tl-label">
+                    <span class="tl-card">
+                        <strong>Bank of Communications</strong>
+                        <small>Senior Credit Risk Analyst</small>
+                    </span>
+                </span>
+                <span class="tl-stem"></span>
+                <span class="tl-dot"></span>
+                <span class="tl-year">2024–25</span>
+
+            </button>
+
+        </div>
+
+        <!-- DETAIL PANELS (one shows at a time) -->
+        <div class="tl-detail" id="tl-detail">
+        <div class="tl-detail-inner">
+            <button class="tl-close" type="button" aria-label="Close details">✕</button>
+
+            <!-- BANK OF COMMUNICATIONS -->
+            <div class="tl-panel" id="panel-boc">
+
+                <p class="tl-panel-type">WORK · FEB 2024 — PRESENT</p>
+
+                <h3>Bank of Communications</h3>
+
+                <p class="tl-panel-role">
+                    Senior Credit Risk Analyst · Apr 2025 — Present
+                    <br>
+                    Credit Risk Analyst · Feb 2024 — Mar 2025
+                </p>
+
+                <p class="tl-panel-summary">
+                    Bridging credit risk analysis and process automation across
+                    large-scale corporate lending in Asia-Pacific.
+                </p>
+
+                <p class="tl-sub">Credit &amp; risk</p>
+                <div class="tl-highlights cols-2">
+                    <div class="tl-hl">
+                        <span class="tl-hl-num">$800M+</span>
+                        <p>Bilateral and syndicated loan approvals supported across 20+ large corporates, with revenues of up to $2B.</p>
+                    </div>
+                    <div class="tl-hl">
+                        <span class="tl-hl-num">$8M</span>
+                        <p>Potential default exposure mitigated through financial and covenant trigger alerts and borrower stress tests.</p>
+                    </div>
+                </div>
+
+                <p class="tl-sub">Automation &amp; reporting</p>
+                <div class="tl-highlights cols-3">
+                    <div class="tl-hl">
+                        <span class="tl-hl-num">90%</span>
+                        <p>Faster reporting: a two-day manual workflow now runs in under an hour, saving 40+ man-hours monthly.</p>
+                    </div>
+                    <div class="tl-hl">
+                        <span class="tl-hl-num">70+</span>
+                        <p>Column enterprise report automated as Functional Lead, cutting a multi-day process to minutes.</p>
+                    </div>
+                    <div class="tl-hl">
+                        <span class="tl-hl-num">Dashboard</span>
+                        <p>Centralised annual-review tracker with automated deadline alerts for Relationship Managers.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- EEX ASIA -->
+            <div class="tl-panel" id="panel-eex">
+
+                <p class="tl-panel-type">
+                    WORK · MAY 2023 — OCT 2023
+                </p>
+
+                <h3>EEX Asia Pte. Ltd.</h3>
+
+                <p class="tl-panel-role">Market Operations Analyst</p>
+
+                <p class="tl-panel-summary">
+                    Supporting global market operations through rigorous risk
+                    controls, trade verification and stakeholder coordination.
+                </p>
+
+                <div class="tl-highlights">
+
+                    <div class="tl-hl">
+                        <span class="tl-hl-num">Global</span>
+                        <p>
+                            Oversaw daily margin, limit-verification checks and
+                            trade parameter audits across global clearing accounts,
+                            maintaining operational continuity during volatile
+                            market conditions.
+                        </p>
+                    </div>
+
+                    <div class="tl-hl">
+                        <span class="tl-hl-num">20%</span>
+                        <p>
+                            Year-on-year growth in active market participants
+                            enabled through proactive communication and resolution
+                            of complex trade and risk barriers.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- BYTEDANCE -->
+            <div class="tl-panel" id="panel-bytedance">
+
+                <p class="tl-panel-type">
+                    WORK · JAN 2022 — DEC 2022
+                </p>
+
+                <h3>ByteDance · TikTok</h3>
+
+                <p class="tl-panel-role">
+                    Product &amp; Process Analyst Intern
+                </p>
+
+                <p class="tl-panel-summary">
+                    Working at the intersection of product, engineering and
+                    operations to streamline dispute resolution, improve incident
+                    response and support product launches.
+                </p>
+
+                <div class="tl-highlights">
+
+                    <div class="tl-hl">
+                        <span class="tl-hl-num">80K</span>
+                        <p>
+                            Users supported through an automated Lark ticketing
+                            and data-triage workflow for auto-moderation disputes,
+                            protecting $500K in operational revenue.
+                        </p>
+                    </div>
+
+                    <div class="tl-hl">
+                        <span class="tl-hl-num">3 hrs</span>
+                        <p>
+                            Reduction in incident response latency through
+                            analysis of system downtime and deployment of
+                            three critical response protocols.
+                        </p>
+                    </div>
+
+                    <div class="tl-hl">
+                        <span class="tl-hl-num">15%</span>
+                        <p>
+                            More roadmap features accelerated through bilingual
+                            sprint planning and PRD alignment between China
+                            Engineering and Singapore Product teams.
+                        </p>
+                    </div>
+
+                    <div class="tl-hl">
+                        <span class="tl-hl-num">1,000+</span>
+                        <p>
+                            Internal moderators supported during the launch
+                            of Guardian, an ad-integrity platform, with NPS
+                            analysis guiding product improvements.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ZEBRA -->
+            <div class="tl-panel" id="panel-zebra">
+
+                <p class="tl-panel-type">
+                    WORK · JUL 2021 — DEC 2021
+                </p>
+
+                <h3>Zebra Technologies</h3>
+
+                <p class="tl-panel-role">Trade Compliance Intern</p>
+
+                <p class="tl-panel-summary">
+                    Supporting global trade compliance through regulatory
+                    controls, process documentation and operational training.
+                </p>
+
+                <div class="tl-highlights">
+
+                    <div class="tl-hl">
+                        <span class="tl-hl-num">Zero</span>
+                        <p>
+                            Compliance violations following the implementation
+                            of rigorous technology-related trade and export
+                            control checks.
+                        </p>
+                    </div>
+
+                    <div class="tl-hl">
+                        <span class="tl-hl-num">54</span>
+                        <p>
+                            Page SOP designed for the Global Trade Management
+                            system, with training sessions that improved
+                            average task efficiency by 30%.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- NUS -->
+            <div class="tl-panel edu" id="panel-nus">
+                <p class="tl-panel-type">EDUCATION · 2018 — 2023</p>
+                <h3>National University of Singapore</h3>
+                <p class="tl-panel-role">Bachelor of Social Sciences (Honors) in Economics</p>
+                <p class="tl-panel-summary">
+                    Minor in Business Administration. Specialisation in Monetary &amp;
+                    Financial Economics and Quantitative Economics. Alongside my degree:
+                    publicity roles across three committees, hall sports and dance, and
+                    three case competitions.
+                </p>
+                <div class="tl-groups">
+
+                    <div class="tl-group">
+                        <h4>Eusoff Hall</h4>
+                        <div class="tl-row"><span>Dance Production</span><em>2018–2020</em></div>
+                        <div class="tl-row"><span>Swim Team</span><em>2018–2019</em></div>
+                        <div class="tl-row"><span>Table Tennis Team</span><em>2018–2019</em></div>
+                        <div class="tl-row"><span>Orientation Camp<small>Main Committee · Publicity</small></span><em>2019–2020</em></div>
+                    </div>
+
+                    <div class="tl-group">
+                        <h4>Campus</h4>
+                        <div class="tl-row"><span>FASS Sports Club<small>Main Committee · Publicity</small></span><em>2019–2020</em></div>
+                        <div class="tl-row"><span>NUS Economics Camp<small>Subcommittee · Publicity</small></span><em>2019–2020</em></div>
+                        <div class="tl-row"><span>NUS Entrepreneurship Society<small>DYOM Module</small></span><em>2021</em></div>
+                    </div>
+
+                    <div class="tl-group">
+                        <h4>Case competitions</h4>
+                        <div class="tl-row"><span>Amplify Global Markets Competition</span><em>2021</em></div>
+                        <div class="tl-row"><span>SMU Sustainability Case Challenge</span><em>2021</em></div>
+                        <div class="tl-row"><span>Shopee Product and Design Challenge</span><em>2022</em></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ACJC -->
+            <div class="tl-panel edu" id="panel-acjc">
+                <p class="tl-panel-type">EDUCATION · 2016 — 2017</p>
+                <h3>Anglo-Chinese Junior College</h3>
+                <p class="tl-panel-role">GCE A' Levels</p>
+                <div class="tl-chips">
+                    <span class="tl-chip">Track &amp; Field</span>
+                    <span class="tl-chip">Table Tennis</span>
+                    <span class="tl-chip">Overseas volunteering · Bintan</span>
+                </div>
+            </div>
+
+            <!-- ANGLICAN HIGH -->
+            <div class="tl-panel edu" id="panel-ahs">
+                <p class="tl-panel-type">EDUCATION · 2012 — 2015</p>
+                <h3>Anglican High School</h3>
+                <p class="tl-panel-role">GCE O' Levels</p>
+                <div class="tl-chips">
+                    <span class="tl-chip">Table Tennis</span>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section class="section">
+
+        <div class="section-heading">
+
+            <span>02 / MY TOOLKIT</span>
+
+            <h2>things I've learned.</h2>
+
+            <p>
+                a growing collection of tools,
+                knowledge and capabilities.
+
+                click to explore.
+            </p>
+
+        </div>
+
+
+        <div class="skill-tabs">
+
+            <button class="skill-tab active"
+                    data-skill="technical">
+                technical
+            </button>
+
+            <button class="skill-tab"
+                    data-skill="finance">
+                finance
+            </button>
+
+            <button class="skill-tab"
+                    data-skill="professional">
+                professional
+            </button>
+
+        </div>
+
+
+        <div class="skill-display">
+
+            <div class="skill-panel active"
+                 id="technical">
+
+                <h3>technical toolkit</h3>
+
+                <div class="skill-tags">
+                    <span>Python</span>
+                    <span>SQL / SQLite</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Google Sheets</span>
+                </div>
+
+                <p class="muted">
+                    skills explored through independent
+                    projects and practical experimentation.
+                </p>
+
+            </div>
+
+
+            <div class="skill-panel"
+                 id="finance">
+
+                <h3>finance &amp; analytical knowledge</h3>
+
+                <div class="skill-tags">
+                    <span>Financial Modelling</span>
+                    <span>DCF Valuation</span>
+                    <span>Equity Research</span>
+                    <span>Financial Analysis</span>
+                    <span>Excel / Spreadsheets</span>
+                </div>
+
+                <p class="muted">
+                    knowledge developed through financial
+                    research, modelling and personal projects.
+                </p>
+
+            </div>
+
+
+            <div class="skill-panel"
+                 id="professional">
+
+                <h3>professional toolkit</h3>
+
+                <div class="skill-tags">
+                    <span>Interpersonal Communication</span>
+                    <span>Stakeholder Management</span>
+                    <span>Research</span>
+                    <span>Problem Solving</span>
+                    <span>Project Coordination</span>
+                    <span>Critical Thinking</span>
+                </div>
+
+                <p class="muted">
+                    capabilities developed through
+                    work, collaboration and learning.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESUME -->
+
+    <section class="section">
+
+        <div class="section-heading">
+
+            <span>03 / THE ACTUAL DOCUMENT</span>
+
+            <h2>my latest resume.</h2>
+
+            <p>
+                the timeline covers the highlights.
+                the full detail lives here.
+            </p>
+
+        </div>
+
+
+        <div class="resume-container">
+
+            <div class="resume-header">
+
+                <div>
+                    <h3>Resume / CV</h3>
+                    <p>Latest version · PDF</p>
+                </div>
+
+                <a href="assets/documents/resume.pdf"
+                   class="button-primary"
+                   download>
+                    Download PDF ↓
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        <h2>the professional side of things</h2>
+        <p>back to <a href="index.html">home</a>.</p>
+    </footer>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

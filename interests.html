@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>interests | little.hortus</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Leaflet map styling -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="logo">little.hortus ✳</a>
+
+    <div class="nav-links">
+        <a href="index.html">about</a>
+        <a href="experience.html">experience</a>
+        <a href="projects.html">projects</a>
+        <a href="interests.html" class="active-link">interests</a>
+    </div>
+
+    <button id="theme-toggle" aria-label="Toggle dark mode">☾</button>
+</nav>
+
+<main>
+
+    <!-- PAGE INTRO -->
+
+    <section class="page-hero">
+        <p class="eyebrow">04 / OUTSIDE THE DESK</p>
+
+        <h1>life beyond<br><em>the norm.</em></h1>
+
+        <p>
+            a collection of places, moments,
+            creative pursuits and ideas that
+            keep me curious.
+        </p>
+    </section>
+
+
+    <!-- 01 / COUNTRIES VISITED -->
+
+    <section class="section travel-map-section" id="countries">
+
+        <div class="section-heading">
+            <span>01 / THE PLACES I'VE BEEN</span>
+
+            <h2>a little more of the world.</h2>
+
+            <p>
+                every place leaves a little something behind.
+                here's a map of the countries I've had the
+                chance to explore so far.
+            </p>
+        </div>
+
+        <div class="map-card">
+
+            <div class="map-topline">
+                <div>
+                    <span class="map-label">MY TRAVEL MAP</span>
+                    <h3>places collected along the way.</h3>
+                </div>
+
+                <div class="map-counter">
+                    <strong id="visited-count">18</strong>
+                    <span>countries visited</span>
+                </div>
+            </div>
+
+            <div id="world-map" aria-label="Interactive world map showing countries visited"></div>
+
+            <div class="map-legend">
+                <span>
+                    <i class="legend-visited"></i>
+                    visited
+                </span>
+
+                <span>
+                    <i class="legend-unvisited"></i>
+                    not yet explored
+                </span>
+            </div>
+
+            <div class="map-country-info" id="map-country-info" aria-live="polite">
+                <span class="about-label">EXPLORE THE MAP</span>
+                <p>click on a country to see whether I've been there.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 02 / BUCKET LIST -->
+
+    <section class="section bucket-section" id="bucket-list">
+
+        <div class="section-heading">
+            <span>02 / THE BUCKET LIST</span>
+
+            <h2>one day, somewhere.</h2>
+
+            <p>
+                places to explore, experiences to collect
+                and little dreams for the future.
+            </p>
+        </div>
+
+        <div class="bucket-list-items">
+
+            <!-- To mark an item complete:
+                 add checked to the input,
+                 add completed to the label,
+                 and change the small status text. -->
+
+            <label class="bucket-item">
+                <input type="checkbox" disabled>
+                <span>see the Northern Lights</span>
+                <small>still dreaming</small>
+            </label>
+
+            <label class="bucket-item">
+                <input type="checkbox" disabled>
+                <span>explore Patagonia</span>
+                <small>still dreaming</small>
+            </label>
+
+            <label class="bucket-item completed">
+                <input type="checkbox" checked disabled>
+                <span>visit the Swiss Alps</span>
+                <small>completed</small>
+            </label>
+
+            <label class="bucket-item">
+                <input type="checkbox" disabled>
+                <span>hike the Mont Blanc trail</span>
+                <small>still dreaming</small>
+            </label>
+
+            <label class="bucket-item">
+                <input type="checkbox" disabled>
+                <span>visit South Africa</span>
+                <small>still dreaming</small>
+            </label>
+
+            <label class="bucket-item completed">
+                <input type="checkbox" checked disabled>
+                <span>go on a multi-day hiking adventure</span>
+                <small>completed</small>
+            </label>
+
+            <label class="bucket-item">
+                <input type="checkbox" disabled>
+                <span>summit Mount Kilimanjaro</span>
+                <small>still dreaming</small>
+            </label>
+
+            <label class="bucket-item">
+                <input type="checkbox" disabled>
+                <span>go skydiving</span>
+                <small>still dreaming</small>
+            </label>
+
+            <label class="bucket-item">
+                <input type="checkbox" disabled>
+                <span>attempt a snowsport (skiing/snowboarding)</span>
+                <small>still dreaming</small>
+            </label>
+
+            <label class="bucket-item">
+                <input type="checkbox" disabled>
+                <span>obtain a diving license</span>
+                <small>still dreaming</small>
+            </label>
+
+        </div>
+
+        <p class="bucket-note">
+            a running list of things I'd love to experience.
+        </p>
+
+    </section>
+
+
+    <!-- 03 / TRAVEL JOURNAL -->
+
+    <section class="section travel-journal-section" id="travel-journal">
+
+        <div class="section-heading">
+            <span>03 / POSTCARDS FROM ELSEWHERE</span>
+
+            <h2>little moments, elsewhere.</h2>
+
+            <p>
+                a collection of places, perspectives
+                and memories captured along the way.
+            </p>
+        </div>
+
+        <!-- HIKING MILESTONES -->
+
+        <div class="milestone-heading">
+            <span class="eyebrow">03A / HIKING MILESTONES</span>
+            <h3>a little further each time.</h3>
+            <p>
+                from mountain summits to multi-day treks,
+                always pushing my human limits.
+            </p>
+        </div>
+
+        <div class="journal-list">
+            <article class="journal-row">
+                <div class="journal-year">2022</div>
+                <div class="journal-title">
+                    <h4>Mount Fansipan</h4>
+                    <span>Vietnam</span>
+                </div>
+                <div class="journal-leader"></div>
+                <div class="journal-altitude">3,143 m</div>
+                <div class="journal-tag">summit</div>
+            </article>
+
+            <article class="journal-row">
+                <div class="journal-year">2024</div>
+                <div class="journal-title">
+                    <h4>Mount Kinabalu</h4>
+                    <span>Malaysia</span>
+                </div>
+                <div class="journal-leader"></div>
+                <div class="journal-altitude">4,095 m</div>
+                <div class="journal-tag">summit</div>
+            </article>
+
+            <article class="journal-row">
+                <div class="journal-year">2025</div>
+                <div class="journal-title">
+                    <h4>Mount Pulag</h4>
+                    <span>Philippines</span>
+                </div>
+                <div class="journal-leader"></div>
+                <div class="journal-altitude">2,928 m</div>
+                <div class="journal-tag">summit</div>
+            </article>
+
+            <article class="journal-row">
+                <div class="journal-year">2025</div>
+                <div class="journal-title">
+                    <h4>Mount Rinjani</h4>
+                    <span>Indonesia</span>
+                </div>
+                <div class="journal-leader"></div>
+                <div class="journal-altitude">3,726 m</div>
+                <div class="journal-tag">summit</div>
+            </article>
+
+            <article class="journal-row">
+                <div class="journal-year">2025</div>
+                <div class="journal-title">
+                    <h4>Annapurna Circuit Trek</h4>
+                    <span>Nepal</span>
+                </div>
+                <div class="journal-leader"></div>
+                <div class="journal-altitude">5,416 m</div>
+                <div class="journal-tag">summit</div>
+            </article>
+        </div>
+
+
+        <!-- FITNESS -->
+
+        <div class="fitness-block">
+
+            <div class="milestone-heading">
+                <span class="eyebrow">03B / KEEPING ACTIVE</span>
+                <h3>movement, in its own way.</h3>
+                <p>
+                    a work in progress — finding time for running,
+                    pilates and other ways to stay active.
+                </p>
+            </div>
+
+            <div class="fitness-grid">
+
+                <article class="fitness-card">
+                    <span class="fitness-icon">↗</span>
+                    <h4>running</h4>
+                    <p>
+                        tracking runs, building consistency
+                        and enjoying the process.
+                    </p>
+
+                    <div class="strava-stats" aria-label="Strava summary">
+                        <div class="strava-stat">
+                            <strong>412</strong>
+                            <span>runs this year</span>
+                        </div>
+                        <div class="strava-stat">
+                            <strong>3,280</strong>
+                            <span>km logged</span>
+                        </div>
+                        <div class="strava-stat">
+                            <strong>21:14</strong>
+                            <span>latest 5K</span>
+                        </div>
+                    </div>
+                    <p class="strava-note">updated Nov 2026</p>
+                </article>
+
+                <article class="fitness-card">
+                    <span class="fitness-icon">✳</span>
+                    <h4>pilates</h4>
+                    <p>
+                        focusing on mobility, control
+                        and mindful movement.
+                    </p>
+                </article>
+
+            </div>
+
+            <a
+                href="https://strava.app.link/Wni8KtMv57b"
+                class="instagram-link"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                find me on Strava ↗
+            </a>
+
+        </div>
+
+        <div class="travel-journal-card">
+
+            <div class="travel-journal-copy">
+                <span class="about-label">THE TRAVEL JOURNAL</span>
+
+                <h3>the world, through my lens.</h3>
+
+                <p>
+                    I prefer keeping my travel photographs
+                    in one place, rather than filling this
+                    little space with too many galleries.
+                </p>
+
+                <p>
+                    find more snapshots, travel moments
+                    and postcards from my adventures over here.
+                </p>
+
+                <a
+                    href="https://www.instagram.com/travelchloz/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="instagram-link"
+                >
+                    explore my travel journal ↗
+                </a>
+            </div>
+
+            <div class="travel-journal-decoration">
+                <span>POSTCARD</span>
+                <strong>somewhere<br>in the world.</strong>
+                <small>collected moments · little.space</small>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 04 / THE CURIOUS MIND -->
+
+    <section class="section curious-section" id="curious-mind">
+
+        <div class="section-heading">
+            <span>04 / THE CURIOUS MIND</span>
+
+            <h2>always learning something.</h2>
+
+            <p>
+                exploring the world through long-form
+                content, documentaries, discussions
+                and independent research.
+            </p>
+        </div>
+
+        <div class="interest-grid">
+
+            <div class="interest-card">
+                <span></span>
+                <h3>general affairs</h3>
+                <p>
+                    global developments,
+                    geopolitics and current affairs.
+                </p>
+            </div>
+
+            <div class="interest-card">
+                <span></span>
+                <h3>finance</h3>
+                <p>
+                    financial markets,
+                    economics and investing concepts.
+                </p>
+            </div>
+
+            <div class="interest-card">
+                <span></span>
+                <h3>technology</h3>
+                <p>
+                    emerging technologies,
+                    innovation and digital trends.
+                </p>
+            </div>
+
+            <div class="interest-card">
+                <span></span>
+                <h3>long-form content</h3>
+                <p>
+                    thought-provoking videos,
+                    interviews and documentaries.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PERSONAL NOTE -->
+
+    <section class="section">
+
+        <div class="journal-entry">
+
+            <p class="eyebrow">A SMALL REMINDER TO MYSELF</p>
+
+            <h3>the world is your oyster.</h3>
+
+            <p>
+                not every interest needs to turn into
+                a project, a career or something productive.
+                life is too short for any regrets, 
+                so just do it.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        <h2>collect moments, not just milestones</h2>
+        <p><a href="index.html">back to home</a></p>
+    </footer>
+
+</main>
+
+<script src="script.js"></script>
+
+<!-- Leaflet map library -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Your map interaction -->
+<script src="interests.js"></script>
+
+</body>
+</html>
